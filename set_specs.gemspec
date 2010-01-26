@@ -2,14 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{set_specs}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tim Cowlishaw"]
   s.date = %q{2010-01-26}
   s.email = %q{tim@timcowlishaw.co.uk}
   s.extra_rdoc_files = ["README"]
-  s.files = ["README", "spec", "lib/matchers.rb"]
+  s.files = ["README", "spec", "lib/set_specs.rb"]
   s.homepage = %q{http://github.com/timcowlishaw/set_specs/}
   s.rdoc_options = ["--main", "README"]
   s.require_paths = ["lib"]

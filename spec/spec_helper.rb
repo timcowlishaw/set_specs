@@ -1,1 +1,1 @@
-require File.join(File.dirname(__FILE__), '..', 'lib', 'matchers')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'set_specs')
