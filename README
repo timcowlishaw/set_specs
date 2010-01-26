@@ -6,4 +6,6 @@ Consists of:
 * be_a_subset_of - asserts that one enumerable is a subset of another
 * be_a_proper_subset_of - asserts that one enumerable is a proper subset of another (ie, the two are not equivalent)
 
+Installation: gem install set_specs
+
 Enjoy!
