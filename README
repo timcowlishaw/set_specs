@@ -2,9 +2,10 @@ set_specs - A few useful RSpec matchers for making assertions about enumerables.
 ================================================================================
 
 Consists of:
-* intersects_with - asserts that one enumerable intersects with another
+* intersect_with - asserts that one enumerable intersects with another
 * be_a_subset_of - asserts that one enumerable is a subset of another
 * be_a_proper_subset_of - asserts that one enumerable is a proper subset of another (ie, the two are not equivalent)
+* partition - asserts that one enumerable, which is itself composed of enumerables, partitions another.
 
 Installation: gem install set_specs
 
