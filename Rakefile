@@ -21,7 +21,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "set_specs"
-  s.version           = "0.1.2"
+  s.version           = "0.1.3"
   s.summary           = "A few Rspec matchers for making assertions about set-like properties of Enumerables."
   s.author            = "Tim Cowlishaw"
   s.email             = "tim@timcowlishaw.co.uk"
