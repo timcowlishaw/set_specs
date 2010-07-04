@@ -1,3 +1,5 @@
+require 'rspec'
+
 RSpec::Matchers.define :intersect_with do |challenge_range|
   
   #based on http://gist.github.com/247669, but using Enumerable#select rather than '&', for compatibility with all enumerables (Enumerable doesn't implement &).
