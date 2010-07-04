@@ -1,4 +1,4 @@
-Spec::Matchers.define :intersect_with do |challenge_range|
+RSpec::Matchers.define :intersect_with do |challenge_range|
   
   #based on http://gist.github.com/247669, but using Enumerable#select rather than '&', for compatibility with all enumerables (Enumerable doesn't implement &).
   
@@ -20,7 +20,7 @@ Spec::Matchers.define :intersect_with do |challenge_range|
   
 end
 
-Spec::Matchers.define :be_a_subset_of do |challenge_range|
+RSpec::Matchers.define :be_a_subset_of do |challenge_range|
   
   
   match do |current_range|
@@ -42,7 +42,7 @@ Spec::Matchers.define :be_a_subset_of do |challenge_range|
 end
 
 
-Spec::Matchers.define :be_a_proper_subset_of do |challenge_range|
+RSpec::Matchers.define :be_a_proper_subset_of do |challenge_range|
   
   
   match do |current_range|
@@ -64,7 +64,7 @@ Spec::Matchers.define :be_a_proper_subset_of do |challenge_range|
 end
 
 
-Spec::Matchers.define :partition do |partitioned_set|
+RSpec::Matchers.define :partition do |partitioned_set|
     match do |partitioning_sets|
       entries = partitioning_sets.map {|s| s.entries}
       entries.zip(entries[1..-1]).map {|a1,a2| a1.should_not intersect_with(a2 || []) }.inject(true) {|m, n| m && n }
